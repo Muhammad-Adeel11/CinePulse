@@ -8,7 +8,7 @@ A clean, modern, Netflix-inspired movie browsing app built with **React + Vite**
 ![Axios](https://img.shields.io/badge/Axios-HTTP-5A29E4?logo=axios&logoColor=white)
 
 ### 🔗 Live Demo — *[(https://cine-pulse-ten.vercel.app/)]*
-### 🔗 Video Walkthrough — *[]*
+### 🔗 Video Walkthrough — *[https://github.com/Muhammad-Adeel11/CinePulse/blob/main/CinePulse%20Video%20Walkthrough.mp4]*
 
 ---
 
