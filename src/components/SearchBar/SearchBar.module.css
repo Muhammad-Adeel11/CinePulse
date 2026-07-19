@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+}
+
+.input {
+  width: 100%;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 0.9rem 1.2rem 0.9rem 3rem;
+  font-size: var(--fs-body);
+  transition: var(--transition);
+}
+
+.input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}

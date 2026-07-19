@@ -1,0 +1,108 @@
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  animation: fadeIn 0.4s ease both;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.posterWrap {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .poster {
+  transform: scale(1.06);
+}
+
+.typeTag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.body {
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  /* Clamp long titles to 2 lines so card heights stay consistent */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.detailsBtn {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.6rem;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.detailsBtn:hover {
+  background: var(--color-accent);
+  color: white;
+}

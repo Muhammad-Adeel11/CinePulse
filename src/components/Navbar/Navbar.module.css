@@ -1,0 +1,71 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--navbar-height);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  max-width: 320px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+}
+
+.searchInput {
+  width: 100%;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 1rem 0.6rem 2.4rem;
+  font-size: var(--fs-small);
+  transition: var(--transition);
+}
+
+.searchInput:focus {
+  border-color: var(--color-accent);
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 640px) {
+  .logo span:not(.highlight) {
+    display: none;
+  }
+  .logo::after {
+    content: 'Explorer';
+  }
+}

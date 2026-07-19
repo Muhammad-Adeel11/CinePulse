@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+  --color-bg: #0F172A;
+  --color-card: #1E293B;
+  --color-accent: #EF4444;
+  --color-accent-secondary: #F59E0B;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, sans-serif;
+  --fs-hero: clamp(2rem, 5vw, 3.25rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* Spacing (8px scale) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Radius / Shadow */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 8px 30px rgba(239, 68, 68, 0.2);
+
+  /* Transitions */
+  --transition: all 0.25s ease;
+
+  /* Layout */
+  --max-width: 1280px;
+  --navbar-height: 72px;
+}
